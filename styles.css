@@ -1,0 +1,175 @@
+.blue { background-color: #cbd7f0; }
+.orange { background-color: #f9eada; }
+.green { background-color: #eaf1de; }
+.white { background-color: white; }
+
+.blue, .green, .orange, .white, body {
+    border: 1px solid black;
+}
+
+.content_div { padding: 5px; }
+
+#page {
+    display: grid;
+    grid-template-areas:
+        "block1 block1 block1 block1"
+        "block2 block3 block3 block4"
+        "block5 block3 block3 block4"
+        "block6 block6 block6 block4";
+    grid-template-columns: 16em 1fr 1fr 16em;
+    grid-template-rows: auto 1fr 1fr auto;
+    gap: 2px;
+    min-height: 97vh;
+    min-width: 1250px;
+}
+
+#block1 { grid-area: block1; }
+#block2 { grid-area: block2; }
+#block3 { grid-area: block3; }
+#block4 { grid-area: block4; }
+#block5 { grid-area: block5; }
+#block6 { grid-area: block6; justify-items: right; }
+
+#block2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+}
+
+#block2 h4 {
+    text-align: center;      
+}
+
+#block2 ul {
+   	padding-left: 1em;       
+    text-align: left;        
+}
+
+#block2 li{
+	margin-bottom: 3vh;
+}
+
+#block5 h2 {
+    text-align: center;      
+    margin-bottom: 0.5em;
+}
+
+#block5 h4 {
+   	padding-left: 1em;       
+    text-align: left;        
+}
+
+#block5 ol {
+   	padding-left: 1em;       
+    text-align: left;        
+    list-style-position: inside;
+}
+
+#block5 li{
+	margin-bottom: 2vh;
+}
+
+#block4 li{
+	margin-bottom: 0.7vh;
+}
+
+#block1, #block6 {
+    display: flex;
+    align-items: center;   
+    justify-content: space-between; 
+    padding: 1em; 
+}
+
+#block1 h1, #block6 h2, #block6 p {
+    margin: 0; 
+}
+
+body {
+    padding: 0;
+    margin: 1vh 1vw;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.teams_image {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+
+#x, #y {
+    padding: 0 1em;
+    margin: 1em;
+    width: fit-content;
+    align-content: center;
+
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+#x {
+	justify-self: right;
+}
+
+#y {
+	justify-self: left;
+}
+
+.content_div {
+    padding: 5px;
+}
+
+#block3 {
+    padding: 2em;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    font-size: 1.3rem;
+    line-height: 1.35;
+}
+
+#block3-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;            
+    margin-bottom: 1.7em;
+}
+
+#block3 #logo {
+    height: auto;
+    max-width: 70%;
+}
+
+#block3-title {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+#block3 p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+#block3 ol {
+    padding-left: 1.2em;
+    margin: 0.5em 0;
+}
+
+#block3 li {
+    margin-bottom: 0.6em;
+}
+
+#block3 img#manufactures {
+    display: block;
+    margin: 1em auto 0 auto; 
+    max-width: 80%;
+    height: auto;
+}
+
+#history{
+	max-width: 25%;
+}
+
